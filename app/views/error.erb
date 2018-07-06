@@ -1,0 +1,10 @@
+<h1>Wrong Password</h1>
+<h3> Please Try Again </h3>
+
+<ol>
+    <% User.all.each do |user| %>
+    <li>
+        hi, <%= user.user_name %>
+    </li>
+    <% end %>
+</ol>
