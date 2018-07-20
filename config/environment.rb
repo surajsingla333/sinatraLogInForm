@@ -3,6 +3,9 @@ Bundler.require
 require_all 'app'
 
 ActiveRecord::Base.establish_connection({
-  :adapter => "sqlite3",
-  :database  => "user/database.sqlite3"})
+  :adapter => "mysql2",
+  :database  => "people",
+  :host => "localhost",
+  :username => "root",
+  :password => "admin"})
   
